@@ -37,7 +37,10 @@ SUPPORTED_MODELS = ["prebuilt-read", "prebuilt-layout", "prebuilt-document"]
 CONFIDENCE_THRESHOLD = 0.80
 
 # Where low-confidence documents get routed for human review
-QA_REVIEW_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "qa_review")
+QA_REVIEW_DIR = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    "qa", "review", "pending"
+)
 
 
 def split_into_chunks(file_path):
@@ -97,16 +100,14 @@ def _extract_confidence(result, model):
                     scores.append(word.confidence)
 
     elif model == "prebuilt-layout":
-        for table in result.tables:
-            for cell in table.cells:
-                if cell.confidence is not None:
-                    scores.append(cell.confidence)
-        # Fall back to word confidence if no tables found
-        if not scores:
-            for page in result.pages:
-                for word in page.words:
-                    if word.confidence is not None:
-                        scores.append(word.confidence)
+        # Note: Azure SDK 3.3.x does not expose confidence scores on DocumentTableCell.
+        # Table cell confidence is a known limitation of this SDK version.
+        # Falling back to word-level confidence as a reliable proxy.
+        # To-Do: Upgrade to azure-ai-documentintelligence SDK for cell-level confidence.
+        for page in result.pages:
+            for word in page.words:
+                if word.confidence is not None:
+                    scores.append(word.confidence)
 
     elif model == "prebuilt-document":
         if hasattr(result, "key_value_pairs"):
@@ -126,7 +127,7 @@ def _extract_confidence(result, model):
 def flag_for_review(filename, full_text, confidence, model, reason):
     """
     Route low-confidence documents to the QA review queue.
-    Writes a JSON file to qa_review/ for human inspection.
+    Writes a JSON file to qa/review/pending/ for human inspection.
     """
     os.makedirs(QA_REVIEW_DIR, exist_ok=True)
 
