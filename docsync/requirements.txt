@@ -1,0 +1,6 @@
+pdfplumber
+psycopg2-binary
+python-dotenv
+PyPDF2
+azure-ai-formrecognizer
+sentence-transformers

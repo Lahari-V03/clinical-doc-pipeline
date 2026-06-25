@@ -1,0 +1,23 @@
+[
+    {
+      "id": "doc_001",
+      "title": "Q1 Financial Report",
+      "author": "Finance Team",
+      "category": "finance",
+      "content": "This report covers the financial performance for Q1 2024. Revenue increased by 12% compared to Q4 2023. Operating expenses remained stable at 45% of revenue."
+    },
+    {
+      "id": "doc_002",
+      "title": "Product Roadmap 2024",
+      "author": "Product Team", 
+      "category": "product",
+      "content": "The 2024 product roadmap focuses on three pillars: performance improvements, new integrations, and mobile experience. Key releases are planned for Q2 and Q4."
+    },
+    {
+      "id": "doc_003",
+      "title": "Security Policy",
+      "author": "IT Team",
+      "category": "policy",
+      "content": "All employees inlcuding the temperory and permanent employees must use two-factor authentication. Passwords must be at least 12 characters. Security audits are conducted quarterly."
+    }
+  ]
