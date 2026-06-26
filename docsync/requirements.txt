@@ -6,3 +6,4 @@ azure-ai-formrecognizer
 sentence-transformers
 urllib3
 openai
+mcp

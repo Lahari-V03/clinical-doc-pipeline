@@ -1,0 +1,8 @@
+﻿{
+  "mcpServers": {
+    "clinical-doc-pipeline": {
+      "command": "C:\\Users\\lahar\\OneDrive\\Desktop\\clinical-doc-pipeline\\docsync\\venv\\Scripts\\python.exe",
+      "args": ["C:\\Users\\lahar\\OneDrive\\Desktop\\clinical-doc-pipeline\\docsync\\mcp_server\\mcp_server.py"]
+    }
+  }
+}
