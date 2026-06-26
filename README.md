@@ -22,40 +22,40 @@ This pipeline addresses three core problems:
 ```mermaid
 flowchart TD
     subgraph Input["Document Sources"]
-        A["Scanned PDFs and Images\nPrior Auth, EOBs, Forms"]
-        B["Digital PDFs\nResearch Papers, Guidelines"]
-        C["JSON / Structured Data\nClaims, HL7"]
-        D["Policy PDFs\nCMS NCDs, Billing Policies"]
+        A["Scanned PDFs and Images<br/>Prior Auth, EOBs, Forms"]
+        B["Digital PDFs<br/>Research Papers, Guidelines"]
+        C["JSON and Structured Data<br/>Claims, HL7"]
+        D["Policy PDFs<br/>CMS NCDs, Billing Policies"]
     end
 
     subgraph Connectors["Connectors"]
-        E["scanned_pdf_connector.py\nAzure DI OCR\nprebuilt-layout, read, document"]
-        F["pdf_connector.py\npdfplumber"]
-        G["json_connector.py\nJSON parsing"]
-        H["clinical_policy_connector.py\nSection and Rule Extraction"]
+        E["scanned_pdf_connector.py<br/>Azure DI OCR<br/>prebuilt-layout, read, document"]
+        F["pdf_connector.py<br/>pdfplumber"]
+        G["json_connector.py<br/>JSON parsing"]
+        H["clinical_policy_connector.py<br/>Section and Rule Extraction"]
     end
 
     subgraph QA["Quality Assurance"]
         I{Confidence Score}
-        J["qa/review/pending\nFlagged for Review"]
-        K["qa_manager.py\nApprove, Reject, Skip"]
+        J["qa/review/pending<br/>Flagged for Review"]
+        K["qa_manager.py<br/>Approve, Reject, Skip"]
     end
 
     subgraph Storage["Storage"]
-        L[("PostgreSQL + pgvector\ndocuments table")]
-        M["processed/\nv1 and v2 txt files"]
-        N["versions.json\nVersion Manifest"]
+        L[("PostgreSQL + pgvector<br/>documents table")]
+        M["processed/<br/>v1 and v2 txt files"]
+        N["versions.json<br/>Version Manifest"]
     end
 
     subgraph Intelligence["Intelligence Layer"]
-        O["generate_embeddings.py\nall-MiniLM-L6-v2"]
-        P["policy_compare.py\nOpenAI GPT-4o-mini"]
-        Q["qa/reports/\nComparison Reports"]
+        O["generate_embeddings.py<br/>all-MiniLM-L6-v2"]
+        P["policy_compare.py<br/>OpenAI GPT-4o-mini"]
+        Q["qa/reports/<br/>Comparison Reports"]
     end
 
     subgraph Agentic["Agentic Mode"]
-        R["mcp_server.py\nMCP Server\ningest_document tool"]
-        S["Cursor or Claude Desktop\nNatural Language Interface"]
+        R["mcp_server.py<br/>MCP Server<br/>ingest_document tool"]
+        S["Cursor or Claude Desktop<br/>Natural Language Interface"]
     end
 
     A --> E
