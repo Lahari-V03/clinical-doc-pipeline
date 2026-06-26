@@ -21,41 +21,41 @@ This pipeline addresses three core problems:
 ## Architecture
 ```mermaid
 flowchart TD
-    subgraph Input["📂 Document Sources"]
-        A[Scanned PDFs & Images\nPrior Auth · EOBs · Forms]
-        B[Digital PDFs\nResearch Papers · Guidelines]
-        C[JSON / Structured Data\nClaims · HL7]
-        D[Policy PDFs\nCMS NCDs · Billing Policies]
+    subgraph Input["Document Sources"]
+        A["Scanned PDFs and Images\nPrior Auth, EOBs, Forms"]
+        B["Digital PDFs\nResearch Papers, Guidelines"]
+        C["JSON / Structured Data\nClaims, HL7"]
+        D["Policy PDFs\nCMS NCDs, Billing Policies"]
     end
 
-    subgraph Connectors["⚙️ Connectors"]
-        E[scanned_pdf_connector.py\nAzure DI OCR\nprebuilt-layout · read · document]
-        F[pdf_connector.py\npdfplumber]
-        G[json_connector.py\nJSON parsing]
-        H[clinical_policy_connector.py\nSection + Rule Extraction]
+    subgraph Connectors["Connectors"]
+        E["scanned_pdf_connector.py\nAzure DI OCR\nprebuilt-layout, read, document"]
+        F["pdf_connector.py\npdfplumber"]
+        G["json_connector.py\nJSON parsing"]
+        H["clinical_policy_connector.py\nSection and Rule Extraction"]
     end
 
-    subgraph QA["🔍 Quality Assurance"]
-        I{Confidence\nScore}
-        J[qa/review/pending\nFlagged for Review]
-        K[qa_manager.py\nInteractive Review\nApprove · Reject · Skip]
+    subgraph QA["Quality Assurance"]
+        I{Confidence Score}
+        J["qa/review/pending\nFlagged for Review"]
+        K["qa_manager.py\nApprove, Reject, Skip"]
     end
 
-    subgraph Storage["🗄️ Storage"]
-        L[(PostgreSQL + pgvector\ndocuments table)]
-        M[processed/\nv1_*.txt · v2_*.txt]
-        N[versions.json\nVersion Manifest]
+    subgraph Storage["Storage"]
+        L[("PostgreSQL + pgvector\ndocuments table")]
+        M["processed/\nv1 and v2 txt files"]
+        N["versions.json\nVersion Manifest"]
     end
 
-    subgraph Intelligence["🧠 Intelligence Layer"]
-        O[generate_embeddings.py\nall-MiniLM-L6-v2\nSemantic Search]
-        P[policy_compare.py\nOpenAI GPT-4o-mini\nLLM Diff Analysis]
-        Q[qa/reports/\nComparison Reports]
+    subgraph Intelligence["Intelligence Layer"]
+        O["generate_embeddings.py\nall-MiniLM-L6-v2"]
+        P["policy_compare.py\nOpenAI GPT-4o-mini"]
+        Q["qa/reports/\nComparison Reports"]
     end
 
-    subgraph Agentic["🤖 Agentic Mode"]
-        R[mcp_server.py\nMCP Server\ningest_document tool]
-        S[Cursor / Claude Desktop\nNatural Language Interface]
+    subgraph Agentic["Agentic Mode"]
+        R["mcp_server.py\nMCP Server\ningest_document tool"]
+        S["Cursor or Claude Desktop\nNatural Language Interface"]
     end
 
     A --> E
@@ -64,11 +64,11 @@ flowchart TD
     D --> H
 
     E --> I
-    I -->|score < 0.80| J
-    I -->|score ≥ 0.80| L
+    I -->|"score less than 0.80"| J
+    I -->|"score 0.80 or above"| L
     J --> K
-    K -->|approved| L
-    K -->|rejected| E
+    K -->|"approved"| L
+    K -->|"rejected"| E
 
     F --> L
     G --> L
@@ -82,7 +82,7 @@ flowchart TD
 
     S --> R
     R --> E
-
+```
 ---
 
 ## Features
@@ -116,40 +116,40 @@ flowchart TD
 ```
 docsync/
 ├── connectors/
-│   ├── scanned_pdf_connector.py      # OCR ingestion with confidence scoring + QA routing
-│   ├── pdf_connector.py              # Digital PDF ingestion
-│   ├── json_connector.py             # JSON / structured data ingestion
-│   └── clinical_policy_connector.py  # Policy document ingestion + version registration
+│   ├── scanned_pdf_connector.py       # OCR ingestion with confidence scoring + QA routing
+│   ├── pdf_connector.py               # Digital PDF ingestion
+│   ├── json_connector.py              # JSON / structured data ingestion
+│   └── clinical_policy_connector.py   # Policy document ingestion + version registration
 │
 ├── analysis/
-│   ├── policy_compare.py             # LLM powered policy version comparison
-│   └── version_store.py              # Policy version tracking and manifest management
+│   ├── policy_compare.py              # LLM-powered policy version comparison
+│   └── version_store.py               # Policy version tracking and manifest management
 │
 ├── mcp_server/
-│   └── mcp_server.py                 # MCP server exposing ingest_document tool
+│   └── mcp_server.py                  # MCP server exposing ingest_document tool
 │
 ├── qa/
-│   ├── qa_manager.py                 # Interactive QA review manager
+│   ├── qa_manager.py                  # Interactive QA review manager
 │   └── review/
-│       ├── pending/                  # Flagged documents awaiting review
-│       ├── approved/                 # Cleared by human reviewer
-│       └── rejected/                 # Needs reprocessing
-│       reports/                      # LLM policy comparison reports
+│       ├── pending/                   # Flagged documents awaiting review
+│       ├── approved/                  # Cleared by human reviewer
+│       ├── rejected/                  # Needs reprocessing
+│       └── reports/                   # LLM policy comparison reports
 │
 ├── samples/
-│   ├── scanned/                      # Scanned PNG/PDF samples
-│   ├── digital/                      # Digital PDF samples
-│   ├── json/                         # JSON data samples
+│   ├── scanned/                       # Scanned PNG/PDF samples
+│   ├── digital/                       # Digital PDF samples
+│   ├── json/                          # JSON data samples
 │   └── policy/
-│       └── cms_ncd/                  # CMS Medicare NCD policy group
-│           ├── raw/                  # Original PDFs
-│           ├── processed/            # Extracted text by version
-│           └── versions.json         # Version manifest
+│       └── cms_ncd/
+│           ├── raw/                   # Original PDFs
+│           ├── processed/             # Extracted text by version label
+│           └── versions.json          # Version manifest
 │
-├── generate_embeddings.py            # Embedding generation for semantic search
-├── run_pipeline.py                   # Full pipeline demo script
-├── docker-compose.yml                # PostgreSQL + pgvector container
-├── init.sql                          # Database schema
+├── generate_embeddings.py             # Embedding generation for semantic search
+├── run_pipeline.py                    # Full pipeline demo script
+├── docker-compose.yml                 # PostgreSQL + pgvector container
+├── init.sql                           # Database schema
 └── requirements.txt
 ```
 
@@ -296,6 +296,12 @@ The agent automatically calls `ingest_document`, runs the OCR pipeline, and retu
 - Extend MCP server with `compare_policies` and `get_qa_status` tools
 - Add de-identification pipeline for PHI handling
 - Build REST API (FastAPI) over the pipeline for integration with downstream systems
+
+---
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
