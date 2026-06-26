@@ -82,6 +82,20 @@ flowchart TD
 
     S --> R
     R --> E
+
+    classDef input fill:#dbeafe,stroke:#3b82f6,color:#1e3a5f
+    classDef connector fill:#dcfce7,stroke:#22c55e,color:#14532d
+    classDef qa fill:#fef9c3,stroke:#eab308,color:#713f12
+    classDef storage fill:#f3e8ff,stroke:#a855f7,color:#3b0764
+    classDef intelligence fill:#ffedd5,stroke:#f97316,color:#7c2d12
+    classDef agentic fill:#fce7f3,stroke:#ec4899,color:#831843
+
+    class A,B,C,D input
+    class E,F,G,H connector
+    class I,J,K qa
+    class L,M,N storage
+    class O,P,Q intelligence
+    class R,S agentic
 ```
 ---
 
