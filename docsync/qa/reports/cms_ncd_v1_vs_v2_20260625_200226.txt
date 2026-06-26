@@ -1,0 +1,59 @@
+
+════════════════════════════════════════════════════════════
+  CLINICAL POLICY COMPARISON REPORT
+  Cotiviti — Clinical NLT Pipeline POC
+  Generated : 2026-06-25 20:02:26
+  Policy    : cms_ncd
+  Comparing : v1 → v2
+════════════════════════════════════════════════════════════
+
+### 1. WHAT CHANGED
+
+**Key Policy Changes:**
+- **Report Year:** The first version (v1) is for FY 2024, while the second version (v2) is for FY 2025.
+- **NCDs Implemented:**
+  - v1: Beta Amyloid PET and PTA of the Carotid Artery.
+  - v2: Allogeneic HSCT for MDS and PrEP for HIV.
+- **NCA Initiated:**
+  - v1: Three NCAs initiated.
+  - v2: Four NCAs initiated, indicating an increase in coverage analysis activities.
+
+**Timelines:**
+- **Average Time to Proposed DM:**
+  - v1: 9.5 months.
+  - v2: 5.9 months (improved performance).
+- **Average Time from Proposed DM to Final DM:**
+  - v1: 90 days.
+  - v2: 268 days (exceeded statutory timeframe).
+- **Average Implementation Time:**
+  - v1: 282 days.
+  - v2: 202 days (improved performance).
+
+**Statutory Timeframes:**
+- No NCDs or NCAs referred to MEDCAC or TA in v2, indicating a shift in the review process.
+
+### 2. OPERATIONAL IMPACT
+
+**Implications for Payment Integrity or Claims Processing Teams:**
+- **Increased Efficiency:** The reduction in time to publish proposed DMs suggests a more streamlined process, which may lead to quicker updates in claims processing.
+- **Monitoring Compliance:** The extended time from proposed to final DM in v2 requires close monitoring to ensure compliance with statutory requirements and to manage beneficiary expectations.
+- **Adaptation to New NCDs:** Teams must familiarize themselves with the new NCDs and NCAs initiated in FY 2025 to ensure accurate claims processing and payment integrity.
+
+**Specific Actions:**
+- Update internal systems and training materials to reflect the new NCDs and NCAs.
+- Implement monitoring mechanisms for compliance with the new timelines and ensure timely updates to claims processing protocols.
+
+### 3. FLAGS FOR HUMAN REVIEW
+
+**Ambiguous Changes:**
+- The increase in average time from proposed DM to final DM in v2 may require further investigation to understand the underlying causes and implications for future determinations.
+- The absence of MEDCAC or TA referrals in v2 could indicate a shift in the evaluation process that may need expert interpretation to assess its impact on future NCDs.
+
+**Confidence Level:**
+- **HIGH** for changes in NCDs and timelines.
+- **MEDIUM** for the implications of the absence of MEDCAC or TA referrals and the extended time from proposed to final DM.
+
+════════════════════════════════════════════════════════════
+  ⚠️  AI-generated. Requires human review before use in
+  payment integrity or claims processing decisions.
+════════════════════════════════════════════════════════════

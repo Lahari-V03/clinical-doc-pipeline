@@ -1,0 +1,22 @@
+{
+  "policy_name": "cms_ncd",
+  "versions": [
+    {
+      "label": "v1",
+      "file": "v1_2024-report-congress.txt",
+      "date": "2024-08-01",
+      "registered_at": "2026-06-25T20:00:16.176762",
+      "notes": "Source: 2024-report-congress.pdf | 5 pages | 14 rules"
+    },
+    {
+      "label": "v2",
+      "file": "v2_2025-report-congress.txt",
+      "date": "2024-08-01",
+      "registered_at": "2026-06-25T20:00:54.839672",
+      "notes": "Source: 2025-report-congress.pdf | 5 pages | 14 rules"
+    }
+  ],
+  "latest": "v2",
+  "created_at": "2026-06-25T20:00:16.160501",
+  "updated_at": "2026-06-25T20:00:54.839672"
+}

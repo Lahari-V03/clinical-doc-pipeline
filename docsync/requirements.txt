@@ -5,3 +5,4 @@ PyPDF2
 azure-ai-formrecognizer
 sentence-transformers
 urllib3
+openai
