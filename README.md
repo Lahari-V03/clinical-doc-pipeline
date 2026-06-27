@@ -18,7 +18,7 @@ This pipeline addresses three core problems:
 
 ---
 
-## Data Flow Process
+## High-level Architecture
 ```mermaid
 flowchart TD
     A[("Document Sources\nScanned PDFs · Digital PDFs · JSON · Policy PDFs")]
