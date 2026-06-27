@@ -21,82 +21,38 @@ This pipeline addresses three core problems:
 ## Architecture
 ```mermaid
 flowchart TD
-    subgraph Input["Document Sources"]
-        A["Scanned PDFs and Images<br/>Prior Auth, EOBs, Forms"]
-        B["Digital PDFs<br/>Research Papers, Guidelines"]
-        C["JSON and Structured Data<br/>Claims, HL7"]
-        D["Policy PDFs<br/>CMS NCDs, Billing Policies"]
-    end
+    A[("📂 Document Sources\nScanned PDFs · Digital PDFs · JSON · Policy PDFs")]
+    B["⚙️ Connectors\nAzure DI OCR · pdfplumber · JSON parser · Policy extractor"]
+    C{"🔍 Confidence Score"}
+    D["⚠️ QA Review Queue\nqa_manager.py · approve / reject / skip"]
+    E[("🗄️ PostgreSQL + pgvector\ndocuments table")]
+    F["📁 Policy Storage\nprocessed/ · versions.json"]
+    G["🧠 Intelligence Layer\ngenerate_embeddings.py · policy_compare.py · OpenAI GPT-4o-mini"]
+    H["🤖 Agentic Mode\nmcp_server.py · Cursor / Claude Desktop"]
 
-    subgraph Connectors["Connectors"]
-        E["scanned_pdf_connector.py<br/>Azure DI OCR<br/>prebuilt-layout, read, document"]
-        F["pdf_connector.py<br/>pdfplumber"]
-        G["json_connector.py<br/>JSON parsing"]
-        H["clinical_policy_connector.py<br/>Section and Rule Extraction"]
-    end
+    A --> B
+    B --> C
+    C -->|"score ≥ 0.80"| E
+    C -->|"score < 0.80"| D
+    D -->|"approved"| E
+    A -->|"policy"| F
+    E --> G
+    F --> G
+    G --> H
 
-    subgraph QA["Quality Assurance"]
-        I{Confidence Score}
-        J["qa/review/pending<br/>Flagged for Review"]
-        K["qa_manager.py<br/>Approve, Reject, Skip"]
-    end
-
-    subgraph Storage["Storage"]
-        L[("PostgreSQL + pgvector<br/>documents table")]
-        M["processed/<br/>v1 and v2 txt files"]
-        N["versions.json<br/>Version Manifest"]
-    end
-
-    subgraph Intelligence["Intelligence Layer"]
-        O["generate_embeddings.py<br/>all-MiniLM-L6-v2<br/>Semantic Search"]
-        P["policy_compare.py<br/>OpenAI GPT-4o-mini<br/>LLM Diff Analysis"]
-        Q["qa/reports/<br/>Comparison Reports"]
-    end
-
-    subgraph Agentic["Agentic Mode"]
-        R["mcp_server.py<br/>MCP Server<br/>ingest_document tool"]
-        S["Cursor or Claude Desktop<br/>Natural Language Interface"]
-    end
-
-    A --> E
-    B --> F
-    C --> G
-    D --> H
-
-    E --> I
-    I -->|"score less than 0.80"| J
-    I -->|"score 0.80 or above"| L
-    J --> K
-    K -->|"approved"| L
-    K -->|"rejected"| E
-
-    F --> L
-    G --> L
-
-    H --> M
-    H --> N
-    M --> P
-    N --> P
-    P --> Q
-
-    L --> O
-
-    S --> R
-    R --> E
-
-    classDef input fill:#dbeafe,stroke:#3b82f6,color:#1e3a5f
+    classDef source fill:#dbeafe,stroke:#3b82f6,color:#1e3a5f
     classDef connector fill:#dcfce7,stroke:#22c55e,color:#14532d
     classDef qa fill:#fef9c3,stroke:#eab308,color:#713f12
     classDef storage fill:#f3e8ff,stroke:#a855f7,color:#3b0764
-    classDef intelligence fill:#ffedd5,stroke:#f97316,color:#7c2d12
+    classDef intel fill:#ffedd5,stroke:#f97316,color:#7c2d12
     classDef agentic fill:#fce7f3,stroke:#ec4899,color:#831843
 
-    class A,B,C,D input
-    class E,F,G,H connector
-    class I,J,K qa
-    class L,M,N storage
-    class O,P,Q intelligence
-    class R,S agentic
+    class A source
+    class B connector
+    class C,D qa
+    class E,F storage
+    class G intel
+    class H agentic
 ```
 ---
 
