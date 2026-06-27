@@ -48,8 +48,8 @@ flowchart TD
     end
 
     subgraph Intelligence["Intelligence Layer"]
-        O["generate_embeddings.py<br/>all-MiniLM-L6-v2"]
-        P["policy_compare.py<br/>OpenAI GPT-4o-mini"]
+        O["generate_embeddings.py<br/>all-MiniLM-L6-v2<br/>Semantic Search"]
+        P["policy_compare.py<br/>OpenAI GPT-4o-mini<br/>LLM Diff Analysis"]
         Q["qa/reports/<br/>Comparison Reports"]
     end
 
@@ -72,13 +72,14 @@ flowchart TD
 
     F --> L
     G --> L
+
     H --> M
     H --> N
-
-    L --> O
     M --> P
     N --> P
     P --> Q
+
+    L --> O
 
     S --> R
     R --> E
