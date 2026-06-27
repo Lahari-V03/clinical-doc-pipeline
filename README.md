@@ -21,14 +21,14 @@ This pipeline addresses three core problems:
 ## Architecture
 ```mermaid
 flowchart TD
-    A[("📂 Document Sources\nScanned PDFs · Digital PDFs · JSON · Policy PDFs")]
-    B["⚙️ Connectors\nAzure DI OCR · pdfplumber · JSON parser · Policy extractor"]
-    C{"🔍 Confidence Score"}
-    D["⚠️ QA Review Queue\nqa_manager.py · approve / reject / skip"]
-    E[("🗄️ PostgreSQL + pgvector\ndocuments table")]
-    F["📁 Policy Storage\nprocessed/ · versions.json"]
-    G["🧠 Intelligence Layer\ngenerate_embeddings.py · policy_compare.py · OpenAI GPT-4o-mini"]
-    H["🤖 Agentic Mode\nmcp_server.py · Cursor / Claude Desktop"]
+    A[("Document Sources\nScanned PDFs · Digital PDFs · JSON · Policy PDFs")]
+    B["Connectors\nAzure DI OCR · pdfplumber · JSON parser · Policy extractor"]
+    C{"Confidence Score"}
+    D["QA Review Queue\nqa_manager.py · approve / reject / skip"]
+    E[("PostgreSQL + pgvector\ndocuments table")]
+    F["Policy Storage\nprocessed/ · versions.json"]
+    G["Intelligence Layer\ngenerate_embeddings.py · policy_compare.py · OpenAI GPT-4o-mini"]
+    H["Agentic Mode\nmcp_server.py · Cursor / Claude Desktop"]
 
     A --> B
     B --> C
