@@ -1,0 +1,169 @@
+U.S. Department of Health and Human
+Services
+Centers for Medicare & Medicaid Services
+REPORT TO CONGRESS
+Fiscal Year 2024
+MEDICARE NATIONAL
+COVERAGE
+DETERMINATIONS
+August 2025
+Page 1
+This is the 24th annual report to Congress on Medicare National Coverage Determinations (NCDs)
+from the Centers for Medicare & Medicaid Services (CMS). Consistent with section 1869(f)(7) of the
+Social Security Act (the Act), CMS reports the amount of time it took to complete and implement all
+NCDs (including NCDs for items and services not previously covered as Medicare benefits) made
+between October 1, 2023, and September 30, 2024. In fiscal year (FY) 2024, we achieved an average
+time of 9.5 months from the date of a formal request to the date of publication of the proposed decision
+memorandum (DM), which exceeds the statutory timeframe set by section 1862(l)(2) of the Act.
+Additionally, it took an average of 90 days from date of publication of the proposed DM to the final
+DM,1 which is within the statutory timeframe set forth at section 1862(l)(3) of the Act. It took an
+average of an additional 282 days to fully implement the payment and coding changes for NCDs to
+cover an item or service from the date the final DM was published on the CMS website. (Coding
+changes occur on a fixed quarterly cycle.)
+Medicare payment is contingent on a determination that an item or service fits within a statutory
+benefit category, is not specifically excluded from coverage, and in most circumstances, that the item
+or service is “reasonable and necessary” for Medicare beneficiaries. Section 1862(a)(1)(A) of the Act
+states that, subject to certain limited exceptions, no payment may be made for any expenses incurred
+for items or services that are not “reasonable and necessary for the diagnosis or treatment of illness or
+injury or to improve the functioning of a malformed body member.” CMS exercises these authorities to
+make coverage determinations regarding whether specific items or services fit within one of the
+broadly defined benefit categories and can be covered under the Medicare program.
+National Coverage Determinations (NCDs)
+As defined in section 1862(1) of the Act, an NCD entails a determination by the Secretary with respect
+to whether or not a particular item or service is covered nationally under title XVIII of the Act. In
+general, an NCD is a national policy statement granting, limiting, or excluding Medicare coverage for
+a particular medical item or service. An NCD is usually written in terms of a specific patient
+population that may receive (or not receive) Medicare payment for a particular item or service. NCDs
+are binding on all Medicare Administrative Contractors (MACs), Quality Improvement Organizations,
+Qualified Independent Contractors, Administrative Law Judges, and the Medicare Appeals Council.
+Since multiple MACs process and pay claims for Medicare beneficiaries, it takes time to communicate
+precisely how to implement these uniform national policies, once a decision is made. Implementation
+may include technical, localized computer systems changes, and/or changes to multiple shared
+computer systems that involve all Medicare fee-for-service (FFS) contractors and system maintainers.
+Beneficiaries are protected by the NCD’s effective date when an NCD expands coverage, even if
+computer system edits are delayed. Medicare instructions include an effective date that establishes
+when items and services will be covered (or not covered) as well as an implementation date indicating
+the last day contractors have to complete all required system edits.
+1 The effective date for an NCD coincides with the date the final decision memorandum is published consistent with
+sections 1862(a)(1)(A) and 1862(1) of the Act.
+Page 2
+CMS uses the phrase national coverage analysis (NCA) to describe the process for making an NCD. In
+FY 2024, CMS implemented two NCDs and initiated three new NCAs.
+(cid:120) Implemented in FY 2024:
+o Beta Amyloid Positron Emission Tomography in Dementia and Neurodegenerative
+Disease (initiated FY 2022)
+o Percutaneous Transluminal Angioplasty (PTA) of the Carotid Artery Concurrent with
+Stenting (initiated FY 2023)
+(cid:120) Initiated in FY 2024:
+o Implanted Pulmonary Artery Pressure Sensor for Heart Failure Management
+o Noninvasive Positive Pressure Ventilation (NIPPV) in the Home for the Treatment of
+Chronic Respiratory Failure consequent to COPD
+o Transcatheter Tricuspid Valve Replacement (TTVR)
+Statutory timeframes for completing NCDs:
+(cid:120) 6 months: From a formal request to publication of the proposed NCD (9 months if there is an
+external Technology Assessment [TA] or a Medicare Evidence Development & Coverage
+Advisory Committee [MEDCAC] meeting).(cid:3)
+(cid:120) 90 days: From the date of publication of a proposed NCD to release of a final NCD.(cid:3)
+Table 1 below presents the details of each NCD implemented in FY 2024, including the outcome of
+CMS review and the completion times.
+Table 2 below presents the details of each NCA initiated in FY 2024.
+Table 1: NCDs Implemented in FY 2024
+Proposed NCD
+NCA type/result Final DM3
+DM2 implemented4
+Decisions initiated in FY 2022 and implemented
+in FY 2024
+Beta Amyloid Positron Emission Tomography in 1st
+13 88 67
+Dementia and Neurodegenerative Disease Reconsideration
+Decisions initiated in FY 2023 and
+implemented in FY 2024
+Percutaneous Transluminal Angioplasty (PTA) of 8th
+5.9 92 215
+the Carotid Artery Concurrent with Stenting Reconsideration
+AVERAGE 9.5 90 141
+2 Months elapsed from date of opening coverage analysis to date of proposed NCD posted on CMS Website.
+3 Days elapsed from date of proposed NCD to date of final NCD. (The Social Security Act requires that the final NCD
+include changes made as a result of the 30-day public comment period and a summary of, and responses to, all public
+comments received.)
+4 Days elapsed from date of final NCD posted on CMS website (i.e., policy effective date) to date of published
+implementation instructions.
+Page 3
+Table 2: NCAs Initiated in FY 2024
+NCA type/result Proposed Final DM3 NCD
+2
+DM implemented4
+Decisions initiated in FY 2024 but not finalized
+Implanted Pulmonary Artery Pressure Sensor for No Final DM NCD Not
+New 6
+Heart Failure Management Issued Implemented
+Noninvasive Positive Pressure Ventilation
+No PDM No Final NCD Not
+(NIPPV) in the Home for the Treatment of New
+Issued DM Issued Implemented
+Chronic Respiratory Failure consequent to COPD
+Transcatheter Tricuspid Valve Replacement No PDM No Final NCD Not
+New
+(TTVR) Issued DM Issued Implemented
+Factors CMS Considers in Commissioning External Technology Assessments
+During the NCD process, CMS may determine that it needs an external Technology Assessment (TA)
+to assist in evaluating the evidence. In many cases, this will occur following the opening of an NCD.).
+In other cases, we may determine that we need an external TA to evaluate the available evidence prior
+to deciding on the need for an NCD review. There may also be instances when an external TA will
+help inform us on the status of the evidence on certain topics of interest to the Agency.
+CMS explains the factors we consider in commissioning an external TA in published guidance.5 In
+general, CMS may request an external TA if one or more of the following conditions applies:
+(cid:120) The body of evidence to review is extensive, making it difficult to complete an internal TA
+within the six-month statutory timeframe.(cid:3)
+(cid:120) An independent formulation of the appropriate assessment questions and methodological
+approach to an issue is desirable given the complexity or conflicting nature of the medical and
+scientific literature available.(cid:3)
+(cid:120) Significant differences in opinion among experts concerning the relevant evidence or in the
+interpretation of data suggest that an independent analysis of all relevant literature will be of
+value.(cid:3)
+(cid:120) The review requires unique technical and/or clinical expertise not available within CMS at the
+time of the review.(cid:3)
+(cid:120) The review calls for specialized methods (e.g., decision modeling, meta-analysis) in health
+technology assessment.(cid:3)
+(cid:120) The topic under consideration will be referred for consideration to the MEDCAC.(cid:3)
+(cid:120) Relevant, non-proprietary, but unpublished data could be collected and analyzed.(cid:3)
+5 CMS, Factors CMS Considers in Commissioning External Technology Assessments, April 11, 2006, available at
+https://www.cms.gov/medicare-coverage-database/view/medicare-coverage-document.aspx?MCDId=7.
+Page 4
+Factors CMS Considers in Referring Topics to the MEDCAC
+We explain the factors we consider in referring a topic to the MEDCAC in published guidance .6 Per this
+guidance document, CMS may refer a topic to the MEDCAC under any of the following
+circumstances:
+(cid:120) There is significant controversy among experts. The opinions of clinical and scientific
+experts vary about the medical benefit of the item or service, the level of competence of
+providers, the requirements of facilities, or some other significant consideration that would
+affect whether the item or service is "reasonable and necessary" under the Social Security
+Act.(cid:3)
+(cid:120) The existing published studies contain potentially significant methodological flaws such as
+flawed design, inappropriate data analysis, or small sample size.(cid:3)
+(cid:120) The available research has not addressed policy-relevant questions.(cid:3)
+(cid:120) The available research has not addressed diseases and conditions or the special needs of the
+elderly in the Medicare population.(cid:3)
+(cid:120) The existing published studies show conflicting results.(cid:3)
+(cid:120) CMS would like additional expert review of the methods used in external TAs, particularly
+when there are questions about a TA, about complex clinical issues, or about specialized
+methods such as decision modeling.(cid:3)
+(cid:120) CMS would like greater public input by receiving and considering comments on the
+effectiveness of an item or service that could be subject to varying interpretations; or it
+would be helpful to obtain the perspective of affected patients and caregivers (e.g., the
+degree of perceived benefit, subjective assessment of risk, or burden of side effects)
+through public comments and voting representatives on the panel.(cid:3)
+(cid:120) Use of the technology is the subject of controversy among the general public.(cid:3)
+(cid:120) Presentation, public discussion, and clarification of the appropriate scope for the technical
+review, a preferred methodological approach, or a clinical management issue would benefit
+future NCDs.(cid:3)
+(cid:120) Dissemination of a technology may have a major impact on the Medicare program, the
+Medicare population, or clinical care for specific beneficiary groups.(cid:3)
+(cid:120) CMS determines that the NCD process would be better informed by deliberation that
+incorporates the viewpoint of patient advocates as well as a broad societal perspective of
+factors not directly related to the scientific review of the evidence but nevertheless relevant
+to the decision.(cid:3)
+(cid:3)
+6 CMS, Factors CMS Considers in Referring Topics to the Medicare Evidence Development & Coverage Advisory
+Committee, Dec. 12, 2006, available at https://www.cms.gov/medicare-coverage-database/view/medicare-coverage-
+document.aspx?MCDId=10.

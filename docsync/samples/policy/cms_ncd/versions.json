@@ -14,9 +14,23 @@
       "date": "2024-08-01",
       "registered_at": "2026-06-25T20:00:54.839672",
       "notes": "Source: 2025-report-congress.pdf | 5 pages | 14 rules"
+    },
+    {
+      "label": "v3",
+      "file": "v3_2024-report-congress.txt",
+      "date": "2026-06-27",
+      "registered_at": "2026-06-27T19:11:56.295653",
+      "notes": "Source: 2024-report-congress.pdf | 5 pages | 14 rules"
+    },
+    {
+      "label": "v4",
+      "file": "v4_2025-report-congress.txt",
+      "date": "2026-06-27",
+      "registered_at": "2026-06-27T19:11:57.172049",
+      "notes": "Source: 2025-report-congress.pdf | 5 pages | 14 rules"
     }
   ],
-  "latest": "v2",
+  "latest": "v4",
   "created_at": "2026-06-25T20:00:16.160501",
-  "updated_at": "2026-06-25T20:00:54.839672"
+  "updated_at": "2026-06-27T19:11:57.172049"
 }

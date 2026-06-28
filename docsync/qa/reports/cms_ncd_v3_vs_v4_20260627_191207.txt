@@ -1,0 +1,61 @@
+
+════════════════════════════════════════════════════════════
+  CLINICAL POLICY COMPARISON REPORT
+  Cotiviti — Clinical NLT Pipeline POC
+  Generated : 2026-06-27 19:12:07
+  Policy    : cms_ncd
+  Comparing : v3 → v4
+════════════════════════════════════════════════════════════
+
+### 1. WHAT CHANGED
+
+**Key Policy Changes:**
+- **Report Year:** The report transitioned from FY 2024 (v3) to FY 2025 (v4).
+- **NCDs Implemented:** 
+  - FY 2024 implemented two NCDs (Beta Amyloid PET and PTA with Stenting).
+  - FY 2025 implemented two NCDs (HSCT for MDS and PrEP for HIV).
+
+**New Procedures/Determinations:**
+- **Initiated NCAs:** 
+  - FY 2024 initiated three NCAs.
+  - FY 2025 initiated four NCAs, indicating an increase in coverage analysis activities.
+
+**Changes to Timelines:**
+- **Average Time to Proposed DM:**
+  - FY 2024: 9.5 months.
+  - FY 2025: 5.9 months (improved performance).
+  
+- **Average Time from Proposed DM to Final DM:**
+  - FY 2024: 90 days.
+  - FY 2025: 268 days (exceeded statutory timeframe).
+
+- **Average Time for Full Implementation:**
+  - FY 2024: 282 days.
+  - FY 2025: 202 days (improved performance).
+
+### 2. OPERATIONAL IMPACT
+
+**Impact on Payment Integrity/Claims Processing:**
+- **Increased Efficiency:** The reduction in time to publish proposed DMs may streamline the claims processing workflow, allowing quicker updates to coverage policies.
+- **Delayed Final DMs:** The extended time from proposed to final DMs may require teams to manage interim claims based on proposed policies, potentially leading to increased queries or appeals.
+- **Implementation Adjustments:** The faster implementation timeline for some NCDs may necessitate quicker updates to internal systems and training for staff on new coverage policies.
+
+**Specific Actions:**
+- Review and adjust claims processing protocols to accommodate the new timelines and ensure compliance with updated NCDs.
+- Monitor the implementation of new NCDs and NCAs to ensure accurate and timely updates to claims systems.
+- Prepare for potential increases in claims inquiries related to the delayed final DMs.
+
+### 3. FLAGS FOR HUMAN REVIEW
+
+**Ambiguous Changes:**
+- **Extended Time for Final DM:** The significant increase in time from proposed to final DM in FY 2025 may require further analysis to understand the underlying causes and implications for claims processing.
+- **NCA Initiation Increase:** The increase in NCAs may indicate a shift in CMS's approach to coverage determinations, necessitating a review of how these changes could impact future claims.
+
+**Confidence Level:**
+- **HIGH** for changes in NCD implementation and timelines.
+- **MEDIUM** for the implications of extended final DM timelines and increased NCA activities, which may require further expert interpretation.
+
+════════════════════════════════════════════════════════════
+  ⚠️  AI-generated. Requires human review before use in
+  payment integrity or claims processing decisions.
+════════════════════════════════════════════════════════════

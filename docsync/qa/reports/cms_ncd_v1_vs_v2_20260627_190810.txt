@@ -1,0 +1,60 @@
+
+════════════════════════════════════════════════════════════
+  CLINICAL POLICY COMPARISON REPORT
+  Cotiviti — Clinical NLT Pipeline POC
+  Generated : 2026-06-27 19:08:10
+  Policy    : cms_ncd
+  Comparing : v1 → v2
+════════════════════════════════════════════════════════════
+
+### 1. WHAT CHANGED
+
+**Key Policy Changes:**
+- **Report Year:** The first document is for FY 2024, while the second is for FY 2025.
+- **NCDs Implemented:**
+  - FY 2024: Beta Amyloid PET and PTA of the Carotid Artery.
+  - FY 2025: Allogeneic HSCT for MDS and PrEP for HIV.
+- **NCA Initiated:**
+  - FY 2024: Three NCAs initiated.
+  - FY 2025: Four NCAs initiated, including T-TEER and CCM for heart failure.
+
+**Timelines:**
+- **Average Time from Request to Proposed DM:**
+  - FY 2024: 9.5 months.
+  - FY 2025: 5.9 months (improved).
+- **Average Time from Proposed DM to Final DM:**
+  - FY 2024: 90 days (within statutory timeframe).
+  - FY 2025: 268 days (exceeds statutory timeframe).
+- **Average Time for Implementation Post-Final DM:**
+  - FY 2024: 282 days.
+  - FY 2025: 202 days (improved).
+
+**Statutory Timeframes:**
+- No NCDs or NCAs referred to MEDCAC or TA in FY 2025, which may streamline processes.
+
+### 2. OPERATIONAL IMPACT
+
+**Implications for Payment Integrity/Claims Processing Teams:**
+- **Improved Timeliness:** The reduction in time from request to proposed DM may lead to faster implementation of coverage changes, enhancing responsiveness to new treatments.
+- **Increased Workload:** The initiation of additional NCAs may require more resources for analysis and implementation.
+- **Monitoring Compliance:** The exceeded timeframe for final DM publication in FY 2025 necessitates closer monitoring to ensure compliance with statutory requirements.
+
+**Specific Actions:**
+- Review and adjust workflows to accommodate the faster NCD implementation timelines.
+- Prepare for potential increases in claims related to newly covered items/services from FY 2025.
+- Ensure that staff are updated on the new NCDs and NCAs to facilitate accurate claims processing.
+
+### 3. FLAGS FOR HUMAN REVIEW
+
+**Ambiguous Changes:**
+- The significant increase in the average time from proposed DM to final DM in FY 2025 (268 days) raises questions about potential delays in implementation and compliance issues.
+- The lack of MEDCAC or TA referrals in FY 2025 could indicate a shift in CMS's approach to evidence evaluation, which may require further analysis.
+
+**Confidence Level:**
+- **HIGH** for the clarity of implemented changes and timelines.
+- **MEDIUM** for the implications of the increased time to final DM and the absence of MEDCAC/TA referrals, which may require expert interpretation.
+
+════════════════════════════════════════════════════════════
+  ⚠️  AI-generated. Requires human review before use in
+  payment integrity or claims processing decisions.
+════════════════════════════════════════════════════════════
